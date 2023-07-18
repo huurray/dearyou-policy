@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/dearyou-policy/static/js/main.284063e6.js",
+    "main.js": "/dearyou-policy/static/js/main.119994f0.js",
     "index.html": "/dearyou-policy/index.html",
-    "main.284063e6.js.map": "/dearyou-policy/static/js/main.284063e6.js.map"
+    "main.119994f0.js.map": "/dearyou-policy/static/js/main.119994f0.js.map"
   },
   "entrypoints": [
-    "static/js/main.284063e6.js"
+    "static/js/main.119994f0.js"
   ]
 }
