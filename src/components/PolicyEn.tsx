@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import styled from 'styled-components';
+import React, { useEffect } from "react";
+import styled from "styled-components";
 
 export default function ({ COMPANY, CS_EMAIL }: any) {
   useEffect(() => {
@@ -28,8 +28,9 @@ export default function ({ COMPANY, CS_EMAIL }: any) {
         <S.SubTitle>1. General Terms</S.SubTitle>
         <S.UList>
           <S.ListItem>
-            1.1 This site is intended for entertainment purposes and It is not meant to serve a
-            purpose.
+            1.1 This site is created for entertainment purposes and is not intended to serve any
+            immoral purpose. You are responsible for all articles you write, and the company does
+            not take legal responsibility.
           </S.ListItem>
           <S.ListItem>
             1.2 You hereby give us (a) your full consent to these Terms and And (b) your use of this
@@ -114,11 +115,12 @@ export default function ({ COMPANY, CS_EMAIL }: any) {
               <S.ListItem>3.3.4 Description of illegal drug use.</S.ListItem>
               <S.ListItem>3.3.5 Use of violent language or images.</S.ListItem>
               <S.ListItem>3.3.6 Violence is acceptable or nicely described.</S.ListItem>
-              <S.ListItem>6.3.7 Provides links to commercial sites.</S.ListItem>
+              <S.ListItem>3.3.7 Provides links to commercial sites.</S.ListItem>
               <S.ListItem>
                 3.3.8 Individuals other than those requested or specially requested when signing up
                 for the site Post contact information.
               </S.ListItem>
+              <S.ListItem>3.3.9 Sexual, illegal, or immoral texts, etc.</S.ListItem>
             </S.UList>
           </S.ListItem>
           <S.ListItem>
@@ -270,7 +272,7 @@ const S = {
     margin: 5px 0;
   `,
   UList: styled.ul`
-    list-style-type: ${(props: any) => (props.type ? props.type : 'disc')};
+    list-style-type: ${(props: any) => (props.type ? props.type : "disc")};
   `,
   OList: styled.ol`
     list-style-type: decimal;

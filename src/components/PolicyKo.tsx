@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import styled from 'styled-components';
+import React, { useEffect } from "react";
+import styled from "styled-components";
 
 export default function ({ COMPANY, CS_EMAIL }: any) {
   useEffect(() => {
@@ -19,7 +19,7 @@ export default function ({ COMPANY, CS_EMAIL }: any) {
           수집하거나 사이트를 계속 이용하실 수 없습니다. 이하 약관에 위반하여 사이트를 이용하는 경우
           민사 혹은 형사 처벌을 받을 수 있습니다. 회사는 언제든 약관을 변경할 권리를 가집니다.
           귀하가 사이트를 계속해서 이용하는 경우 변경된 약관 내용에 동의하는 것으로 간주합니다.
-          따라서, 사용자들은 약관의 변경이 있는 경우 이를 검토하여야 합니다. 문의가 있는 경우 즉시{' '}
+          따라서, 사용자들은 약관의 변경이 있는 경우 이를 검토하여야 합니다. 문의가 있는 경우 즉시{" "}
           {CS_EMAIL}으로 이메일을 보내주십시오.
         </S.Text>
       </S.Box>
@@ -28,7 +28,8 @@ export default function ({ COMPANY, CS_EMAIL }: any) {
         <S.UList>
           <S.ListItem>
             1.1 본 사이트는 엔터테인먼트 목적으로 제작된 것이며 비도덕적인 목적을 충족하기 위한 것이
-            아닙니다.
+            아닙니다. 귀하가 작성하는 모든 글에 대한 책임은 귀하에게 있으며, 회사는 법적 책임을 지지
+            않습니다.
           </S.ListItem>
           <S.ListItem>
             1.2 귀하는 이로써 당사에 (a) 귀하가 본 약관에 온전하게 동의하고 이에 의거한 행위를 할 수
@@ -96,7 +97,8 @@ export default function ({ COMPANY, CS_EMAIL }: any) {
           </S.ListItem>
           <S.ListItem>
             3.3 회원님이 사이트에 접수, 게시, 전송하는 내용들은 전적으로 귀하의 책임입니다. 이하의
-            내용들은 사이트에 접수, 게시 또는 전송하실 수 없습니다.
+            내용들은 사이트에 접수, 게시 또는 전송하실 수 없습니다. 전송했다면 처벌 대상이 될 수
+            있습니다.
             <S.UList>
               <S.ListItem>3.3.1 명예훼손.</S.ListItem>
               <S.ListItem>
@@ -106,10 +108,11 @@ export default function ({ COMPANY, CS_EMAIL }: any) {
               <S.ListItem>3.3.4 불법 마약 이용 묘사.</S.ListItem>
               <S.ListItem>3.3.5 폭력적인 언어나 이미지 사용.</S.ListItem>
               <S.ListItem>3.3.6 폭력을 허용 가능한 것 또는 멋지게 묘사.</S.ListItem>
-              <S.ListItem>6.3.7 상업적인 사이트로의 링크 제공.</S.ListItem>
+              <S.ListItem>3.3.7 상업적인 사이트로의 링크 제공.</S.ListItem>
               <S.ListItem>
                 3.3.8 사이트 가입 시 요청되거나 특별히 요구된 것 이외의 개인 연락처 정보 게시.
               </S.ListItem>
+              <S.ListItem>3.3.9 성적, 불법적, 비도덕적 의미를 가지는 글 등.</S.ListItem>
             </S.UList>
           </S.ListItem>
           <S.ListItem>
@@ -252,7 +255,7 @@ const S = {
     margin: 5px 0;
   `,
   UList: styled.ul`
-    list-style-type: ${(props: any) => (props.type ? props.type : 'disc')};
+    list-style-type: ${(props: any) => (props.type ? props.type : "disc")};
   `,
   OList: styled.ol`
     list-style-type: decimal;
